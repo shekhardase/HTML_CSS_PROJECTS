@@ -1,0 +1,59 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* You can change this color as needed */
+}
+
+.weatherapp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff; /* You can change this color as needed */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weatherapp div {
+  text-align: center;
+}
+
+.weatherapp span {
+  font-size: 2em;
+  display: block;
+}
+
+.text {
+  font-size:0.5em;
+  color: #333; /* You can change this color as needed */
+}
+
+#temp {
+  font-weight: bold;
+  color: #ff4500; /* You can change this color as needed */
+  padding: inherit;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 3em;
+}
+
+#location {
+  font-size: 3em;
+  font-weight: bold;
+  padding: inherit;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#Date {
+  font-size: 3em;
+  font-weight: bold;
+  padding: inherit;
+  padding-left: 100px;
+  padding-right: 100px;
+}
