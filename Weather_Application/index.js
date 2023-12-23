@@ -16,7 +16,7 @@ const locationSection = document.getElementById('location');
 locationSection.textContent = `${currentCity}`;
 
 // Get the temperature from the API
-fetch('https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}' + currentCity)
+fetch('https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={514c2805397f8ff97146a220faede581}' + currentCity)
     .then(response => response.json())
     .then(data => {
         const currentTemperature = data.current.temp_c;
