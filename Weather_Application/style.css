@@ -1,59 +1,125 @@
 body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background-color: #f0f0f0; /* You can change this color as needed */
+  font-family: Arial, sans-serif;
+  /* background-color: #f0f0f0; */
+  background: url(pexels-pixabay-531880.jpg);
 }
 
-.weatherapp {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #fff; /* You can change this color as needed */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.weatherapp div {
+.container {
+  max-width: 500px;
+  margin: 0 auto;
   text-align: center;
+  padding: 30px 40px 30px 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(16, 71, 27, 0.6);
+  margin-top: 105px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.23021708683473385) 0%,
+    rgba(34, 195, 44, 0.19940476190476186) 100%
+  );
+  margin-top: auto;
 }
 
-.weatherapp span {
-  font-size: 2em;
-  display: block;
+h1 {
+  margin-left: 5%;
+  color: white;
+  font-size: 70px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.text {
-  font-size:0.5em;
-  color: #333; /* You can change this color as needed */
-}
-
-#temp {
+input[type="text"] {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border: 1px solid #fefefe;
+  border-radius: 5px;
+  padding-left: 10px;
+  background: rgb(255, 255, 255);
+  color: white;
+  font-size: 20px;
   font-weight: bold;
-  color: #ff4500; /* You can change this color as needed */
-  padding: inherit;
-  padding-left: 100px;
-  padding-right: 100px;
-  font-size: 3em;
+  background: rgb(34, 195, 44);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 195, 44, 0.19940476190476186) 0%,
+    rgba(255, 255, 255, 0.23021708683473385) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* make placholder white */
+input[type="text"]::placeholder {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 #location {
-  font-size: 3em;
-  font-weight: bold;
-  padding: inherit;
-  padding-left: 100px;
-  padding-right: 100px;
+  /* margin-top: 30px; */
+  color: white;
+  font-size: 50px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+#temperature {
+  /* margin-top: 30px; */
+  color: white;
+  font-size: 35px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+#description {
+  color: white;
+  font-size: 30px;
+  font-weight: lighter;
+  font-family: sans-serif;
 }
 
 #Date {
-  font-size: 3em;
+  color: white;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+button {
+  margin-top: 30px;
+  background: rgb(67, 251, 63);
+  background: radial-gradient(
+    circle,
+    rgba(67, 251, 63, 0.2050070028011205) 0%,
+    rgba(70, 175, 252, 0.4767156862745098) 100%
+  );
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-style: normal;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
-  padding: inherit;
-  padding-left: 100px;
-  padding-right: 100px;
+}
+
+button:hover {
+  background: rgb(70, 175, 252);
+  background: radial-gradient(
+    circle,
+    rgba(70, 175, 252, 0.4767156862745098) 0%,
+    rgba(67, 251, 63, 0.2050070028011205) 100%
+  );
+  font-weight: bold;
+}
+
+.weather-info {
+  margin-top: 15px;
+  text-align: center;
+  /* font-size: 20px; */
+  color: white;
+  font-weight: bold;
+  
 }
