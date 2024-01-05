@@ -87,7 +87,7 @@ ul li {
   list-style: none;
   font-size: 17px;
   padding: 12px 8px 12px 50px;
-  user-select: none;
+  -webkit-user-select: none; /* Safari */
   cursor: pointer;
   position: relative;
 }
