@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome CDN for the search icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="clock-container">
+        <div class="head">
+            <h1>Digital Clock</h1>
+        </div>
+        
+        <div class="clock">
+            <span id="hour">00</span>
+            <span id="minutes">00</span>
+            <span id="seconds">00</span>
+            <span id="AM">AM</span>
+        </div>
+    </div>
+
+
+    <div class="search-box">
+        <button class="btn-search" onclick="googleSearch()"><i class="fas fa-search"></i></button>
+        <input type="text" class="input-search" id="searchInput" placeholder="Type to Search...">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
