@@ -17,25 +17,26 @@
         <!-- </div> -->
     </div>
 
-    <div class="container mx-auto">
-        <div class="flex">
 
-            <div class="p-5 mx-5 my-5">
-                <img src="https://cataas.com/cat" alt="Img">
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-xl overflow-hidden md:max-w-3xl mt-12">
+        <div class="md:flex">
+
+            <div class="md:shrink-0">
+                <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://cataas.com/cat" alt="Cat Pics">
             </div>
 
-            <div class="p-5 mx-5 my-5" id="fact">
-                Loading...
+            <div class="p-8">
 
-            </div>
-
-            <div class="p-5 mx-5 my-5">
-                <button class="p-10 m-10 h-18 w-18 text-center bg-amber-200 text-grey text-2xl"
+                <div class="uppercase tracking-wide text-sm text-amber-900 font-semibold" id="fact">
+                    Loading...
+                </div>
+                <button
+                    class=" tracking-wide text-center p-5 m-10 h-18 w-18 text-center bg-amber-200 hover:bg-amber-300 text-grey text-2xl rounded-lg shadow-md transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-opacity-50 "
                     onclick="RELOAD()">CLICK</button>
+
             </div>
 
         </div>
-
     </div>
 
 
