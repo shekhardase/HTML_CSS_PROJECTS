@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Fetch</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>NASA Daily</h1>
+    <div class="flex">
+
+        <div class="image">
+            <img src="" alt="image" id="image-of-the-day">
+        </div>
+
+        <div id="info" class="bg-orange-100 p-5 ml-1">
+            <p>Loading...</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
