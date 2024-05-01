@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    #quoteContainer,
+    #quoteContainer2,
+    #quoteContainer3 {
+        margin-bottom: 20px;
+    }
+
+    #quoteContainer {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    #quoteContainer2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #555;
+    }
+
+    #quoteContainer3 {
+        font-size: 18px;
+        font-weight: normal;
+        color: #777;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Blogging with Anime Quotes</h1>
+        <div id="quoteContainer"></div>
+        <div id="quoteContainer2"></div>
+        <div id="quoteContainer3"></div>
+    </div>
+</body>
+
+<script>
+    fetch("https://animechan.xyz/api/random")
+        .then((response) => response.json())
+        .then((quote) => {
+            const quoteTitle = quote.anime;
+            const quote1 = quote.quote;
+            const characterName = quote.character;
+            const quoteContainer = document.getElementById("quoteContainer");
+            const quoteContainer2 = document.getElementById("quoteContainer2");
+            const quoteContainer3 = document.getElementById("quoteContainer3");
+
+            quoteContainer.innerHTML = quote1;
+            quoteContainer2.innerHTML = `Title: ${quoteTitle}`;
+            quoteContainer3.innerHTML = `Character: ${characterName}`;
+        });
+</script>
+
+</html>
